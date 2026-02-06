@@ -1,0 +1,91 @@
+{
+  "free_models": {
+    "opencode/big-pickle": {
+      "category": "FREE",
+      "description": "OpenCode Zen - Big Pickle",
+      "limits": "no documented limits"
+    },
+    "opencode/gpt-5-nano": {
+      "category": "FREE",
+      "description": "OpenCode Zen - GPT 5 Nano",
+      "limits": "no documented limits"
+    },
+    "opencode/minimax-m2.1-free": {
+      "category": "FREE",
+      "description": "OpenCode Zen - MiniMax M2.1",
+      "limits": "no documented limits"
+    },
+    "opencode/glm-4.7-free": {
+      "category": "FREE",
+      "description": "OpenCode Zen - GLM 4.7",
+      "limits": "no documented limits"
+    },
+    "opencode/kimi-k2.5-free": {
+      "category": "FREE",
+      "description": "OpenCode Zen - Kimi K2.5",
+      "limits": "no documented limits"
+    },
+    "opencode/trinity-large-preview-free": {
+      "category": "FREE",
+      "description": "OpenCode Zen - Trinity Large Preview",
+      "limits": "no documented limits"
+    }
+  },
+  "free_tier_providers": {
+    "cerebras": {
+      "category": "FREE_LIMITED",
+      "description": "Cerebras Inference",
+      "limits": "1M tokens/day (aggregate across all models)"
+    },
+    "deepseek": {
+      "category": "FREE_LIMITED",
+      "description": "DeepSeek AI",
+      "limits": "5M tokens initial + 50 RPM"
+    },
+    "groq": {
+      "category": "FREE_LIMITED",
+      "description": "Groq Cloud",
+      "limits": "14.4K requests/day, 30 RPM"
+    }
+  },
+  "zai_models": {
+    "zai-coding-plan/glm-4.5": {
+      "category": "PAID",
+      "description": "GLM 4.5"
+    },
+    "zai-coding-plan/glm-4.5v": {
+      "category": "PAID",
+      "description": "GLM 4.5V (Vision)"
+    },
+    "zai-coding-plan/glm-4.5-flash": {
+      "category": "PAID",
+      "description": "GLM 4.5 Flash"
+    },
+    "zai-coding-plan/glm-4.5-air": {
+      "category": "PAID",
+      "description": "GLM 4.5 Air"
+    },
+    "zai-coding-plan/glm-4.6": {
+      "category": "PAID",
+      "description": "GLM 4.6"
+    },
+    "zai-coding-plan/glm-4.6v": {
+      "category": "PAID",
+      "description": "GLM 4.6V (Vision)"
+    },
+    "zai-coding-plan/glm-4.7": {
+      "category": "PAID",
+      "description": "GLM 4.7"
+    },
+    "zai-coding-plan/glm-4.7-flash": {
+      "category": "PAID",
+      "description": "GLM 4.7 Flash"
+    }
+  },
+  "success_regex": "(?i)(^|\\b)(2\\s*,?\\s*3\\s*,?\\s*5|prime|primos|OK)(\\b|$)",
+  "not_found_regex": "(?i)(404|not\\.found|entity.was.not.found|modelnotfounderror|model.*not.*available)",
+  "auth_regex": "(?i)(auth|unauthoriz|api\\.?key|invalid.*key|401|403|permission.*denied)",
+  "quota_regex": "(?i)(insufficient.*quota|quota.*exceed|no.*credits?|billing.*limit|insufficient.*funds)",
+  "rate_limit_regex": "(?i)(rate.limit|too.many.*request|throttl|429|rate.*limited)",
+  "timeout_regex": "(?i)(timeout|timed.out|deadline.exceeded|context.*deadline.*exceeded)"
+}

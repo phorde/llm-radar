@@ -1,0 +1,74 @@
+# Binaries
+opencode-check
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+coverage.txt
+coverage.html
+coverage.xml
+*.coverprofile
+
+# Dependency directories
+vendor/
+
+# Go workspace file
+go.work
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Build artifacts
+dist/
+build/
+bin/
+releases/
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+*.pid
+*.sock
+*.lock
+core
+core.*
+
+# OpenCode specific
+.opencode/
+
+# Cache and results (for development)
+.config/
+config/
+cache/
+results/
+
+# Security exclusions - CRITICAL: Never commit credentials
+# Security exclusions - CRITICAL: Never commit credentials
+.env
+.env.*
+!.env.example
+secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Agent Specific (Internal only)
+docs/AGENT_GUIDELINES.md
